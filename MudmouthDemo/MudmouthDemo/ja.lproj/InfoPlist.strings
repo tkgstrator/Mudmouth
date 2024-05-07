@@ -1,0 +1,12 @@
+/* 
+  InfoPlist.strings
+  MudmouthDemo
+
+  Created by tkgstrator on 2023/03/28.
+  Copyright © 2023 Magi Corporation. All rights reserved.
+*/
+
+NSUserTrackingUsageDescription = "Allow tracking in the app to display the most relevant advertisements";
+NSPhotoLibraryUsageDescription = "Allow access to the photo library to save images";
+NSPhotoLibraryAdditionasUsageDescription = "Allow access to the photo library to save images";
+NSCameraUsageDescription = "Allow access to the camera to read QR codes";
