@@ -33,7 +33,7 @@ public func startMITMServer(configuration: Configuration) async throws {
                         NIOSSLServerHandler(context: configuration.context),
                         ByteToMessageHandler(HTTPRequestDecoder(leftOverBytesStrategy: .forwardBytes)),
                         HTTPResponseEncoder(),
-                        ProxyHandler(),
+                        ProxyHandler()
                     ], position: .last)
             }
             .childChannelOption(ChannelOptions.socket(IPPROTO_TCP, TCP_NODELAY), value: 1)

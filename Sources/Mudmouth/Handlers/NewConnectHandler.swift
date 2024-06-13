@@ -41,7 +41,7 @@ internal final class NewConnectHandler: ChannelInboundHandler {
                             // swiftlint:disable:next force_try
                             try! NIOSSLClientHandler(context: context, serverHostname: self.host),
                             HTTPRequestEncoder(),
-                            ByteToMessageHandler(HTTPResponseDecoder(leftOverBytesStrategy: .forwardBytes)),
+                            ByteToMessageHandler(HTTPResponseDecoder(leftOverBytesStrategy: .forwardBytes))
                         ])
                     })
                     .connect(host: host, port: port)

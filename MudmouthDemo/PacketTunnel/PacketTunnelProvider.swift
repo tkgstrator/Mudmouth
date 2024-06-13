@@ -6,7 +6,6 @@
 //
 
 import CryptoKit
-import DequeModule
 import Foundation
 import Mudmouth
 import NIOCore

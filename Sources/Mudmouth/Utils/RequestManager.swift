@@ -29,7 +29,7 @@ internal final class RequestManager: CertificateManager {
     func saveToPreferences() async throws {
         let granted: Bool = try await requestAuthorization()
         if !granted {
-            return
+            throw MMError.NotGranted
         }
         let manager: NETunnelProviderManager = .init()
         manager.localizedDescription = "@Salmonia3JP"
@@ -78,7 +78,7 @@ internal final class RequestManager: CertificateManager {
     func stopVPNTunnel() async throws {
         guard let provider: NETunnelProviderManager = try await loadAllFromPreferences()
         else {
-            return
+            throw MMError.NotFound
         }
         provider.connection.stopVPNTunnel()
         UINotificationFeedbackGenerator().notificationOccurred(.warning)

@@ -60,7 +60,7 @@ public struct Configuration: Codable {
         // swiftlint:disable:next force_try
         let extensions: Certificate.Extensions = try! .init([
             .init(BasicConstraints.isCertificateAuthority(maxPathLength: nil), critical: true),
-            .init(KeyUsage(digitalSignature: true, keyCertSign: true), critical: true),
+            .init(KeyUsage(digitalSignature: true, keyCertSign: true), critical: true)
         ])
         // swiftlint:disable:next force_try
         let certificate: Certificate = try! .init(
@@ -177,6 +177,7 @@ public struct Configuration: Codable {
             ),
             privateKey: caPrivateKey
         )
+        print(configuration)
         return configuration
     }
 }

@@ -139,4 +139,4 @@ closure_body_length:
 line_length:
   - 200
 trailing_comma:
-  mandatory_comma: true
+  mandatory_comma: false

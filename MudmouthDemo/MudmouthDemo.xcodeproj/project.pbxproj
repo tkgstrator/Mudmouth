@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		102304F02C18A6F90008457F /* Mudmouth in Frameworks */ = {isa = PBXBuildFile; productRef = 102304EF2C18A6F90008457F /* Mudmouth */; };
+		102304F22C18A7780008457F /* Mudmouth in Frameworks */ = {isa = PBXBuildFile; productRef = 102304F12C18A7780008457F /* Mudmouth */; };
 		1098C14B2BEA644B000D23BB /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1098C14A2BEA644B000D23BB /* NetworkExtension.framework */; };
 		1098C14E2BEA644B000D23BB /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1098C14D2BEA644B000D23BB /* PacketTunnelProvider.swift */; };
 		1098C1532BEA644B000D23BB /* PacketTunnel.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1098C1492BEA644B000D23BB /* PacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		1098C1592BEA68D9000D23BB /* Mudmouth in Frameworks */ = {isa = PBXBuildFile; productRef = 1098C1582BEA68D9000D23BB /* Mudmouth */; };
 		1098C15E2BEA7172000D23BB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1098C15D2BEA7172000D23BB /* InfoPlist.strings */; };
 		10DCAD2F2BEA4BAD00E9FEF0 /* MudmouthDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DCAD2E2BEA4BAD00E9FEF0 /* MudmouthDemoApp.swift */; };
 		10DCAD312BEA4BAD00E9FEF0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DCAD302BEA4BAD00E9FEF0 /* ContentView.swift */; };
@@ -19,7 +20,6 @@
 		10DCAD412BEA4BAE00E9FEF0 /* MudmouthDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DCAD402BEA4BAE00E9FEF0 /* MudmouthDemoTests.swift */; };
 		10DCAD4B2BEA4BAE00E9FEF0 /* MudmouthDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DCAD4A2BEA4BAE00E9FEF0 /* MudmouthDemoUITests.swift */; };
 		10DCAD4D2BEA4BAE00E9FEF0 /* MudmouthDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DCAD4C2BEA4BAE00E9FEF0 /* MudmouthDemoUITestsLaunchTests.swift */; };
-		10DCAD5C2BEA4BF900E9FEF0 /* Mudmouth in Frameworks */ = {isa = PBXBuildFile; productRef = 10DCAD5B2BEA4BF900E9FEF0 /* Mudmouth */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +61,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		102304EE2C189FA50008457F /* Mudmouth */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Mudmouth; path = ..; sourceTree = "<group>"; };
 		1098C1492BEA644B000D23BB /* PacketTunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PacketTunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		1098C14A2BEA644B000D23BB /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		1098C14D2BEA644B000D23BB /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
@@ -81,7 +82,6 @@
 		10DCAD462BEA4BAE00E9FEF0 /* MudmouthDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MudmouthDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10DCAD4A2BEA4BAE00E9FEF0 /* MudmouthDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MudmouthDemoUITests.swift; sourceTree = "<group>"; };
 		10DCAD4C2BEA4BAE00E9FEF0 /* MudmouthDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MudmouthDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		10DCAD592BEA4BD500E9FEF0 /* Mudmouth */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Mudmouth; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +90,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1098C14B2BEA644B000D23BB /* NetworkExtension.framework in Frameworks */,
-				1098C1592BEA68D9000D23BB /* Mudmouth in Frameworks */,
+				102304F22C18A7780008457F /* Mudmouth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10DCAD5C2BEA4BF900E9FEF0 /* Mudmouth in Frameworks */,
+				102304F02C18A6F90008457F /* Mudmouth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,7 +132,7 @@
 		10DCAD222BEA4BAD00E9FEF0 = {
 			isa = PBXGroup;
 			children = (
-				10DCAD592BEA4BD500E9FEF0 /* Mudmouth */,
+				102304EE2C189FA50008457F /* Mudmouth */,
 				10DCAD2D2BEA4BAD00E9FEF0 /* MudmouthDemo */,
 				10DCAD3F2BEA4BAE00E9FEF0 /* MudmouthDemoTests */,
 				10DCAD492BEA4BAE00E9FEF0 /* MudmouthDemoUITests */,
@@ -216,7 +216,7 @@
 			);
 			name = PacketTunnel;
 			packageProductDependencies = (
-				1098C1582BEA68D9000D23BB /* Mudmouth */,
+				102304F12C18A7780008457F /* Mudmouth */,
 			);
 			productName = packetTunnel;
 			productReference = 1098C1492BEA644B000D23BB /* PacketTunnel.appex */;
@@ -238,7 +238,7 @@
 			);
 			name = MudmouthDemo;
 			packageProductDependencies = (
-				10DCAD5B2BEA4BF900E9FEF0 /* Mudmouth */,
+				102304EF2C18A6F90008457F /* Mudmouth */,
 			);
 			productName = MudmouthDemo;
 			productReference = 10DCAD2B2BEA4BAD00E9FEF0 /* MudmouthDemo.app */;
@@ -637,7 +637,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = work.tkgstrator.MudmouthDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -676,7 +677,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = work.tkgstrator.MudmouthDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -690,6 +692,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D9HU6JZF2Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -712,6 +715,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D9HU6JZF2Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -733,6 +737,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D9HU6JZF2Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -754,6 +759,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D9HU6JZF2Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -820,11 +826,11 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1098C1582BEA68D9000D23BB /* Mudmouth */ = {
+		102304EF2C18A6F90008457F /* Mudmouth */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Mudmouth;
 		};
-		10DCAD5B2BEA4BF900E9FEF0 /* Mudmouth */ = {
+		102304F12C18A7780008457F /* Mudmouth */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Mudmouth;
 		};

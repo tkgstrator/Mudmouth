@@ -19,7 +19,7 @@ internal class NotificationHandler {
         content.body = NSLocalizedString("TOKEN_CAPTURED_BODY", bundle: .module, comment: "")
         content.userInfo = [
             "headers": request.headers.base64EncodedString,
-            "body": request.body.base64EncodedString,
+            "body": request.body.base64EncodedString
         ]
         let triger: UNTimeIntervalNotificationTrigger = .init(timeInterval: 1, repeats: false)
         let request: UNNotificationRequest = .init(

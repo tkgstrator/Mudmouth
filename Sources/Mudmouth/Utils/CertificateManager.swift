@@ -89,7 +89,7 @@ extension CertificateManager: ChannelInboundHandler {
         let pemString: String = configuration.certificate.pemRepresentation
         let headers: HTTPHeaders = .init([
             ("Content-Length", pemString.count.formatted()),
-            ("Content-Type", "application/x-x509-ca-cert"),
+            ("Content-Type", "application/x-x509-ca-cert")
         ])
         let head = HTTPResponseHead(version: .init(major: 1, minor: 1), status: .ok, headers: headers)
         context.write(wrapOutboundOut(.head(head)), promise: nil)

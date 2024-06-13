@@ -1,4 +1,4 @@
-// swift-tools-version: 5.10
+// swift-tools-version: 5.9
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -16,6 +16,7 @@ let package = Package(
             targets: ["Mudmouth"]),
     ],
     dependencies: [
+        .package(url: "https://github.com/Alamofire/Alamofire.git", exact: "5.6.0"),
         .package(url: "https://github.com/apple/swift-format.git", from: "509.0.0"),
         .package(url: "https://github.com/kishikawakatsumi/KeychainAccess.git", from: "4.2.2"),
         .package(url: "https://github.com/realm/SwiftLint.git", from: "0.54.0"),
